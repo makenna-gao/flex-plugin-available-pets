@@ -11,18 +11,18 @@ const Pet = (props) => {
     return null;
   }
 
-  const [available, setAvailable] = useState(props.available);
+  //const [available, setAvailable] = useState(props.available);
 
   const buttonReserveHandler = (props) => {
     //props.available = false;
-    setAvailable(false);
+    //setAvailable(false);
   };
 
   const dismiss = () => setIsOpen(false);
 
   return (
     <Theme.Provider theme="default">
-      <div className={available ? styles.pet : styles.petOverlay}>
+      <div className={props.available ? styles.pet : styles.petOverlay}>
         
         <h3>
           {props.name} - #{props.id}
@@ -31,7 +31,7 @@ const Pet = (props) => {
           {props.age < 1 ? props.age * 12 + " months" : props.age + " years"}
         </p>
         {/* {!available && <div className={styles.petOverlayText}>Reserved</div>} */}
-        {available ? <button onClick={buttonReserveHandler}>Reserve Pet</button> : <button onClick={buttonReserveHandler} disabled>Reserve Pet</button>}
+        {props.available ? <button onClick={buttonReserveHandler}>Reserve Pet</button> : <button onClick={buttonReserveHandler} disabled>Reserve Pet</button>}
         <button onClick={buttonReserveHandler}>Send bio</button>
     </div>
     </Theme.Provider>

@@ -145,7 +145,9 @@ const PetList = (props) => {
     <Theme.Provider theme="default">
       <div>
         {/* <Card className={styles.pets}> */}
-          <h2 style={{ textAlign: "center" }}>Available Pets</h2>
+          <br/>
+          <h1 style={{ textAlign: "center", fontWeight: "bold", fontSize: "30px" }}>Available Pets</h1>
+          <br/>
           <PetFilter
             selectedSpecies={selectedSpecies}
             onChangeSpeciesFilter={onChangeSpeciesFilter}
