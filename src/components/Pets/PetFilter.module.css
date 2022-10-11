@@ -1,0 +1,76 @@
+.petFilter {
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    margin: 0.25rem auto;
+    width: 50rem;
+    max-width: 95%;
+  }
+  
+  .petFilterFilter {
+    color: white;
+    padding: 0 1rem;
+  }
+  
+  .petFilterFilterControl {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+  
+  .petFilterFilter label {
+    margin-bottom: 0.5rem;
+    color: black;
+  }
+  
+  .petFilterFilter input {
+    font: inherit;
+    font-size: 15px;
+    padding: 0.25rem 0.5rem;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  
+  .petFilterFilter select {
+    font: inherit;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    margin: 2px;
+  }
+  
+  .petFilter button {
+    font-size: 8px;
+    font: inherit;
+    cursor: pointer;
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid #50a0d5;
+    background-color: #50a0d5;
+    color: white;
+    border-radius: 4px;
+    margin-right: 1rem;
+  }
+  
+  .petFilter button:hover {
+    background-color: #3a79a3;
+    border-color: #3a79a3;
+  }
+  
+  .petFilter button:active {
+    background-color: #2b5d7e;
+    border-color: #2b5d7e;
+  }
+  
+  .petFilter button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  .petFilter button.alternative:hover,
+  .petFilter button.alternative:active {
+    background-color: #ddb3f8;
+  }
+  
