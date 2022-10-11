@@ -6,9 +6,9 @@ import { FlexPlugin } from '@twilio/flex-plugin';
 import PetOfDay from './components/Pets/PetOfDay';
 import PetList from './components/Pets/PetList';
 
-const PLUGIN_NAME = 'SamplePlugin';
+const PLUGIN_NAME = 'AvailablePetsPlugin';
 
-export default class SamplePlugin extends FlexPlugin {
+export default class AvailablePetsPlugin extends FlexPlugin {
   constructor() {
     super(PLUGIN_NAME);
   }
